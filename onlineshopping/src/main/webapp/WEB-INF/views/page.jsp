@@ -47,7 +47,7 @@
 		<!-- Navigation -->
 		<%@include file="./shared/navbar.jsp"%>
 
-		<!-- Page Content -->
+		<!-- Page Content --> 
 
 		<div class="content">
 
@@ -65,6 +65,12 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			<!-- contact content -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- Footer  -->
